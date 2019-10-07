@@ -1,7 +1,5 @@
 package com.najih.news.network;
 
-import android.content.Context;
-
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.OkHttpClient;

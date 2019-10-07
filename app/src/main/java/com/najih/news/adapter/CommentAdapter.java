@@ -15,7 +15,7 @@ import com.najih.news.model.Comment;
 
 import java.util.ArrayList;
 
-public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.vh>{
+public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.vh> {
     private ArrayList<Comment> list_comment;
 
     public CommentAdapter(ArrayList<Comment> list_comment) {
@@ -25,7 +25,7 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.vh>{
     @NonNull
     @Override
     public vh onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.comment_item,parent,false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.comment_item, parent, false);
         return new CommentAdapter.vh(v);
     }
 
@@ -44,8 +44,9 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.vh>{
         return list_comment.size();
     }
 
-    class vh extends RecyclerView.ViewHolder{
-        TextView comment,owner;
+    class vh extends RecyclerView.ViewHolder {
+        TextView comment, owner;
+
         public vh(@NonNull View itemView) {
             super(itemView);
             comment = (TextView) itemView.findViewById(R.id.comment);
