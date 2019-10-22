@@ -164,7 +164,6 @@ public class DetailStory extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
         if (like_data) {
             Favorite.setLiked(true);
             Favorite.setTitle(title.getText().toString());
@@ -175,5 +174,6 @@ public class DetailStory extends AppCompatActivity {
             setResult(RESULT_OK, returnIntent);
             finish();
         }
+        super.onBackPressed();
     }
 }
